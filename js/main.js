@@ -97,3 +97,5 @@ value.textContent = range.value;
 range.addEventListener("input", () => {
   value.textContent = range.value;
 });
+// Show Password
+

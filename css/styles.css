@@ -145,8 +145,8 @@ nav {
 
 .nav__links {
   position: absolute;
-  right: -230px;
-  top: 0;
+  right: -250px;
+  top: 0px;
   /* left: 0; */
   height: 100vh;
   width: fit-content;
@@ -155,7 +155,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 1.7rem 1rem 1.7rem;
+  padding: 0 2rem 1rem 2rem;
   background: var(--background-color);
   backdrop-filter: blur(20px);
   transition: 0.5s;
@@ -171,6 +171,7 @@ nav {
   background: #97a7c0;
   transition: all .3s ease;
 }
+
 .btn-view:hover {
   background: #9fb4d6;
   transform: scale(1.3);
@@ -377,105 +378,7 @@ header::before {
   z-index: -1;
 }
 
-.footer__container {
-  display: grid;
-  gap: 4rem 2rem;
-}
 
-.footer__logo {
-  display: inline-flex;
-  margin-bottom: 2rem;
-}
-
-.footer__logo img {
-  max-width: 90px;
-}
-
-.footer__socials {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer__socials a {
-  display: inline-flex;
-  padding: 5px 6px;
-  font-size: 1.5rem;
-  color: var(--white);
-  border: 2px solid var(--white);
-  border-radius: 100%;
-}
-
-.footer__socials a:hover {
-  border-color: var(--text-color);
-}
-
-.footer__col h4 {
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-light);
-  letter-spacing: 2px;
-}
-
-.footer__links {
-  display: grid;
-  gap: 2rem;
-}
-
-.footer__links a {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--white);
-  letter-spacing: 2px;
-}
-
-.footer__links a:hover {
-  color: var(--text-color);
-}
-
-.footer__col form {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border: 2px solid var(--white);
-}
-
-.footer__col input {
-  flex: 1;
-  padding-inline: 1rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: transparent;
-}
-
-.footer__col input::placeholder {
-  color: var(--white);
-}
-
-.footer__col form .btns {
-  padding: 0.75rem;
-  border: none;
-  font-size: 1.25rem;
-  color: #fff;
-  outline: none;
-  background: var(--text-color);
-}
-
-.footer__col form .btns:hover {
-  color: var(--btn-color);
-}
-
-.footer__bar {
-  padding: 1.5rem 1rem;
-  font-size: 1rem;
-  color: var(--white);
-  text-align: center;
-  background-color: #1f1b1c;
-}
 
 /* ================= CAR SEARCH ================= */
 
@@ -538,10 +441,12 @@ header::before {
   outline: none;
   transition: all .3s ease;
 }
-.car-search__box .car-btn:hover{
+
+.car-search__box .car-btn:hover {
   background: orange;
   letter-spacing: 1px;
 }
+
 /* Sale Center */
 
 /* ================= RESPONSIVE ================= */
@@ -664,6 +569,7 @@ header::before {
 .search-box button:hover {
   background: #e56c00;
 }
+
 /* Sale Center */
 .container-search-box {
   display: flex;
@@ -696,9 +602,11 @@ header::before {
   color: var(--white);
   background: transparent;
 }
-.search-box-car select option{
-  background:var(--background-color);
+
+.search-box-car select option {
+  background: var(--background-color);
 }
+
 .range-box label {
   font-weight: bold;
 }
@@ -720,19 +628,20 @@ header::before {
 }
 
 .filters {
-  background:var(--btn-color);
+  background: var(--btn-color);
 }
 
 .resets {
-  background:rgb(238, 64, 64);
+  background: rgb(238, 64, 64);
 }
 
 /* Cards */
-.sale-cards{
+.sale-cards {
   width: 100%;
   display: grid;
   gap: 20px;
 }
+
 .sale-card {
   background: #fff;
   padding: 15px;
@@ -749,6 +658,7 @@ header::before {
 .sale-card h3 {
   margin: 10px 0 5px;
 }
+
 /* ================= BRAND SEARCH ================= */
 /* ================= SEARCH BY BRAND ================= */
 .brand-section {
@@ -858,9 +768,7 @@ header::before {
   padding-right: 4rem;
 }
 
-.footer__container {
-  grid-template-columns: repeat(4, 1fr);
-}
+
 
 /* YNTZ */
 .latest-cars {
@@ -1050,108 +958,7 @@ header::before {
   font-weight: bold;
 }
 
-/* ================= RESPONSIVE ================= */
-
-/* ≥ 600px */
-@media (min-width: 600px) {
-  .car-search h1 {
-    font-size: 26px;
-  }
-
-  .car-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .search-box {
-    grid-template-columns: 1fr;
-  }
-
-  .search-box {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .car-page {
-    flex-direction: column;
-  }
-
-  .search-box {
-    width: 100%;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .car-search__box {
-    grid-template-columns: repeat(3, 2fr);
-  }
-
-  .car-search__box .btn {
-    grid-column: span 3;
-  }
-    .container-search-box {
-    flex-direction: column;
-  }
-
-  .sale-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-/* ≥ 900px */
-@media (min-width: 900px) {
-  .car-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .search-box {
-    grid-template-columns: repeat(3, 1fr);
-  }
-    .container-search-box {
-    flex-direction: row;
-  }
-
-  .search-box-car{
-    max-width: 300px;
-  }
-
-  .sale-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-/* ≥ 1200px */
-@media (min-width: 1000px) {
-  .car-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .car-search__box {
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-  }
-
-  .car-search__box .btn {
-    grid-column: auto;
-  }
-    .sale-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .container-search-box {
-    flex-direction: row;
-  }
-
-}
 /* About */
-
-/* Hero */
 .hero {
   background: linear-gradient(to right, #0f766e, #2dd4bf);
   color: #fff;
@@ -1214,10 +1021,669 @@ header::before {
   font-size: 32px;
 }
 
-/* ============ RESPONSIVE ============ */
 
-/* >= 600px */
+
+/* ================= RESPONSIVE ================= */
+
+.about-us {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== Card ===== */
+.team-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== Avatar ===== */
+.avatar {
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar.teal {
+  background: #3aa7a3;
+}
+
+.avatar.pink {
+  background: #ff6f91;
+}
+
+.avatar.yellow {
+  background: #ffcc00;
+}
+
+/* ===== Text ===== */
+.team-card h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  color: #0a8a4a;
+}
+
+.role {
+  display: block;
+  margin: 6px 0 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.team-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Feedback */
+.feedback {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.feedback h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* ===== Card ===== */
+.feedback-card {
+  background: #fff;
+  width: 100%;
+  max-width: 520px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Input ===== */
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f1f3f5;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.input-box i {
+  font-size: 18px;
+  color: #1dd1a1;
+}
+
+.input-box input,
+.input-box textarea {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  font-size: 14.5px;
+  resize: none;
+}
+
+.input-box:focus-within {
+  border-color: #1dd1a1;
+  background: #fff;
+}
+
+/* ===== Button ===== */
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(29, 209, 161, 0.4);
+}
+
+/* ================= RESPONSIVE ================= */
+/* ================= Footer ================= */
+
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 35px;
+}
+
+/* Footer box */
+.footer-box h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+/* Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.footer-logo h3 {
+  color: #0fd27a;
+  font-size: 22px;
+}
+
+/* Links */
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+  font-size: 14.5px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+  transition: .3s all ease-in-out;
+}
+
+.footer-box ul li a:hover {
+  color: #0fd27a;
+  margin-left: 10px;
+}
+
+/* Contact */
+.contact li {
+  font-size: 14.5px;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* ===== Newsletter ===== */
+.newsletter {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter button {
+  padding: 10px 14px;
+  background: #0fd27a;
+  border: none;
+  border-radius: 6px;
+  color: #111;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: #0bbf6e;
+}
+
+/* ===== Social ===== */
+.social {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.social a {
+  width: 36px;
+  height: 36px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.social a:hover {
+  background: #0fd27a;
+  color: #111;
+}
+
+/* partner */
+.partner {
+  padding: 90px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+/* ===== Grid ===== */
+.partner-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 35px;
+}
+
+/* ===== Card ===== */
+.partner-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Image ===== */
+.partner-img {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.partner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.partner-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== Content ===== */
+.partner-content {
+  padding: 28px;
+  text-align: center;
+}
+
+.partner-content h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0fb9b1;
+}
+
+.partner-content p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+/* ===== Button ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(29, 209, 161, 0.45);
+}
+
+.partner-details {
+  padding: 90px 20px;
+}
+
+/* ===== Wrapper ===== */
+.details-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  display: grid;
+  overflow: hidden;
+}
+
+/* ===== Image ===== */
+.details-image {
+  background: #000;
+}
+
+.details-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Info ===== */
+.details-info {
+  padding: 40px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #1dd1a1;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.details-info h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #0fb9b1;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ===== Meta ===== */
+.meta {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.meta div strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+.meta div span {
+  font-size: 14px;
+  color: #666;
+}
+
+.meta .active {
+  color: #10ac84;
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
+.action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 10px 25px rgba(29, 209, 161, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  border: 2px solid #1dd1a1;
+  color: #1dd1a1;
+}
+
+.btn.outline:hover {
+  background: #1dd1a1;
+  color: #fff;
+}
+
+/* Blog */
+.register {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== Card ===== */
+.register-card {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.register-card h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: #0fb9b1;
+}
+
+.sub {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* ===== Input ===== */
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f1f3f5;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.input-box i {
+  font-size: 18px;
+  color: #1dd1a1;
+}
+
+.input-box input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  font-size: 14.5px;
+}
+
+.input-box:focus-within {
+  border-color: #1dd1a1;
+  background: #fff;
+}
+
+/* ===== Button ===== */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(29, 209, 161, 0.45);
+}
+
+/* ===== Login Link ===== */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #1dd1a1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Responsive ================= */
+/* ================= Responsive ================= */
+
+/* ≥ 600px */
 @media (min-width: 600px) {
+  .car-search h1 {
+    font-size: 26px;
+  }
+
+  .car-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .car-page {
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .car-search__box {
+    grid-template-columns: repeat(3, 2fr);
+  }
+
+  .car-search__box .btn {
+    grid-column: span 3;
+  }
+
+  .container-search-box {
+    flex-direction: column;
+  }
+
+  .sale-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1225,10 +1691,67 @@ header::before {
   .stats {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .feedback h2 {
+    font-size: 34px;
+  }
+
+  .feedback-card {
+    padding: 40px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .register-card {
+    padding: 45px 40px;
+  }
+
 }
 
-/* >= 900px */
+/* ≥ 900px */
 @media (min-width: 900px) {
+  .car-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container-search-box {
+    flex-direction: row;
+  }
+
+  .search-box-car {
+    max-width: 300px;
+  }
+
+  .sale-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .about {
     flex-direction: row;
     align-items: center;
@@ -1242,10 +1765,72 @@ header::before {
   .features {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .feedback {
+    padding: 100px 20px;
+  }
+
+  .feedback-card {
+    max-width: 560px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .partner-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .details-info h2 {
+    font-size: 36px;
+  }
+
+  .details-image {
+    min-height: 420px;
+  }
+
+  .register-card {
+    max-width: 460px;
+  }
+
+  .register-card h2 {
+    font-size: 32px;
+  }
 }
 
-/* >= 1000px */
+
+/* ≥ 1000px */
 @media (min-width: 1000px) {
+  .car-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .car-search__box {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+
+  .car-search__box .btn {
+    grid-column: auto;
+  }
+
+  .sale-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container-search-box {
+    flex-direction: row;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .team-card {
+    padding: 35px 30px;
+  }
+
   .hero h1 {
     font-size: 42px;
   }
@@ -1256,7 +1841,233 @@ header::before {
     max-width: 1100px;
     margin: auto;
   }
+
+  .feedback h2 {
+    font-size: 38px;
+  }
+
+  .footer {
+    padding: 70px 20px 25px;
+  }
+
+  .footer-logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .partner-img {
+    height: 250px;
+  }
+
+  .details-info {
+    padding: 50px;
+  }
+
+  .register-card {
+    max-width: 500px;
+  }
 }
 
+/* ================= Responsive ================= */
 
-/* ================= RESPONSIVE ================= */
+/* ှShow Password */
+.input-box {
+  position: relative;
+}
+
+.toggle-password {
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.toggle-password:hover {
+  color: #1dd1a1;
+}
+
+/* ffff */
+
+
+.container-blog {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 100%;
+}
+
+.search-box-blog {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box-blog input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box-blog button {
+    padding: 10px 20px;
+    background-color: #1ed2c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.categories {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.categories h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categories li {
+    padding: 10px 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.categories li span {
+    color: #1ed2c4;
+    margin-right: 10px;
+}
+
+.categories li:hover {
+    color: #1ed2c4;
+}
+
+/* Blog Grid Styling */
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile မှာ တစ်ခုစီ */
+    gap: 25px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    position: relative;
+    height: 200px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.blog-card:hover .overlay {
+    opacity: 1;
+}
+
+.arrow {
+    background: #1ed2c4;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.date {
+    color: #1ed2c4;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* 600px ထက်ကြီးရင် Sidebar နဲ့ Grid ကို ဘေးချင်းကပ်ဖို့ စဥ်းစားမယ် (ဒါမှမဟုတ် Grid ၂ ခုခွဲမယ်) */
+@media (min-width: 600px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 900px ထက်ကြီးရင် Layout ကို Desktop Flow ပြောင်းမယ် */
+@media (min-width: 900px) {
+    .container-blog {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .sidebar {
+        width: 300px;
+        position: sticky;
+        top: 20px;
+    }
+    .blog-grid {
+        flex: 1;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1000px နဲ့ အထက်မှာ Grid ၃ ခုအထိ ပြနိုင်တယ် */
+@media (min-width: 1100px) {
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
