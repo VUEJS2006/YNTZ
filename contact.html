@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/components/swiper-bundle.min.css" />
     <link href="css/components/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/loader.css">
     <title>About Page</title>
 </head>
 
@@ -49,23 +50,23 @@
 
     </nav>
 
-     <header id="home" data-aos="fade-down">
-    <!-- Background Video -->
-    <video class="header__video" autoplay muted loop playsinline>
-      <source src="image/c.mp4" type="video/mp4">
-    </video>
+    <header id="home" data-aos="fade-down">
+        <!-- Background Video -->
+        <video class="header__video" autoplay muted loop playsinline>
+            <source src="image/c.mp4" type="video/mp4">
+        </video>
 
-    <!-- Overlay (optional) -->
-    <div class="header__overlay"></div>
+        <!-- Overlay (optional) -->
+        <div class="header__overlay"></div>
 
-    <!-- Content -->
-    <div class="section__container header__container">
-      <h1 style="color: #fff;" class="section__header" data-aos="fade-up" data-aos-delay="200">
-        Find Your Perfect Ride Today
-      </h1>
+        <!-- Content -->
+        <div class="section__container header__container">
+            <h1 style="color: #fff;" class="section__header" data-aos="fade-up" data-aos-delay="200">
+                Find Your Perfect Ride Today
+            </h1>
 
-    </div>
-  </header>
+        </div>
+    </header>
 
 
     <section class="contact-container">
@@ -82,15 +83,16 @@
             <!-- Contact Info -->
             <div class="contact-info">
                 <h3>Get in Touch</h3>
+                <br>
                 <p>We would love to hear from you.</p>
-
+                <br>
                 <ul>
                     <li><strong>Address:</strong> Mandalay, Myanmar</li>
                     <br>
                     <li><strong>Phone:</strong> +95 9 123 456 789</li>
                     <br>
                     <li><strong>Email:</strong> info@example.com</li>
-                      <br>
+                    <br>
                     <li><strong>Branch:</strong>Yangon / Mandalay/ Bago</li>
                 </ul>
             </div>
@@ -125,7 +127,7 @@
             <div class="footer-box">
                 <div class="footer-logo">
                     <img src="image/car-logo-img.png" alt="YNTZ Logo">
-                    <h3>YNTZ</h3>
+                  
                 </div>
                 <p>
                     YNTZ Car Sale Center provides quality vehicles, trusted service,
@@ -169,7 +171,17 @@
         </div>
     </footer>
 
+  <div id="loader">
+    <div class="loader-box">
+      <div class="car-icon"><img src="image/car-logo-img-yntz.png" alt=""  style="width: 300px;"></div>
 
+      <div class="progress">
+        <span></span>
+      </div>
+
+      <p style="color: #000;font-size: 1.1rem;">Preparing your drive...</p>
+    </div>
+  </div>
     <script src="js/components/scrollreveal.js"></script>
     <script src="js/components/swiper-bundle.min.js"></script>
     <script src="js/components/aos.js"></script>
@@ -197,6 +209,7 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,87 @@
+
+/* Loader */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader Box */
+.loader-box {
+    text-align: center;
+}
+
+/* Car Icon */
+.car-icon {
+    font-size: 56px;
+    margin-bottom: 16px;
+    animation: float .75s ease-in-out infinite;
+}
+
+/* Progress Bar */
+.progress {
+    width: 260px;
+    height: 4px;
+    background: #38bdf8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    width: 40%;
+    background:#fff;
+    animation: loading .75s ease-in-out infinite;
+}
+
+/* Text */
+#loader p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    opacity: 0.7;
+}
+
+/* Content */
+#content {
+    display: none;
+    padding: 40px;
+}
+
+/* Animations */
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(260px);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .progress {
+        width: 200px;
+    }
+}

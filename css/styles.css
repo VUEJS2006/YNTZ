@@ -11,6 +11,7 @@
   --text-color: #eeba2b;
   --btn-color: #f8bc17;
   --btn-hover-color: #ffbb00;
+  --blue-btn:#3cd1c2;
 }
 
 * {
@@ -433,10 +434,9 @@ header::before {
 .car-search__box .car-btn {
   width: 100%;
   font-weight: 600;
-  background: var(--btn-color);
+  background: var(--blue-btn);
   color: #fff;
   padding: 15px;
-  margin: 10px;
   border-radius: .5rem;
   border: none;
   outline: none;
@@ -444,7 +444,6 @@ header::before {
 }
 
 .car-search__box .car-btn:hover {
-  background: orange;
   letter-spacing: 1px;
 }
 
@@ -625,11 +624,11 @@ header::before {
   margin-top: 10px;
   color: #fff;
   border-radius: .5rem;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .filters {
-  background: var(--btn-color);
+  background: var(--blue-btn);
 }
 
 .resets {
@@ -901,7 +900,7 @@ header::before {
 
 .range-box input[type="range"] {
   width: 100%;
-  accent-color: var(--btn-color);
+  accent-color: var(--blue-btn);
 }
 
 .range-value {
@@ -2390,6 +2389,9 @@ Responsive
 
     .car-img-compare {
         height: 180px;
+    }
+    .car-btn{
+      margin: 0;
     }
 }
 

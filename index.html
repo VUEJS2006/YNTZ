@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/components/swiper-bundle.min.css" />
   <link href="css/components/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/loader.css">
   <title>Home Page</title>
 </head>
 
@@ -38,7 +39,7 @@
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT US</a></li>
         <li><a href="yntz_sale_center.html">YNTZ Sales Center</a></li>
-         <li><a href="blog.html">Blogs</a></li>
+        <li><a href="blog.html">Blogs</a></li>
         <li><a href="partner.html">Our Partner</a></li>
         <li><a href="feedback.html">Feedback</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
@@ -49,7 +50,7 @@
 
   </nav>
 
-   <header id="home" data-aos="fade-down">
+  <header id="home" data-aos="fade-down">
     <!-- Background Video -->
     <video class="header__video" autoplay muted loop playsinline>
       <source src="image/c.mp4" type="video/mp4">
@@ -69,10 +70,10 @@
   <!-- Car select search -->
   <section class="car-search">
     <div class="section__container car-search__container">
-      <h1 class="car-search__title">
+      <h1 style="color: #fff;" class="car-search__title">
         Find Cars For Sale And Buy For You
       </h1>
-      <p class="car-search__subtitle">
+      <p style="color: #cac6c6;" class="car-search__subtitle">
         Find Your Dream Car
       </p>
 
@@ -103,7 +104,7 @@
   <!-- Car brands  -->
 
   <section class="brand-section">
-    <h1 class="car-search__title">
+    <h1 style="color: #fff;" class="car-search__title">
       Search Brands
     </h1>
     <div class="brand-container">
@@ -247,8 +248,8 @@
 
   <!-- Card Gallery -->
   <section class="section__container gallery__container" id="gallery" data-aos="fade-up">
-    <p class="section__subheader" data-aos="fade-right">EIGHTYEIGHT DETAILING</p>
-    <h2 class="section__header" data-aos="fade-left">OUR GALLERY</h2>
+    <p style="color: #cac6c6;" class="section__subheader" data-aos="fade-right">EIGHTYEIGHT DETAILING</p>
+    <h2 style="color: #fff;" class="section__header" data-aos="fade-left">OUR GALLERY</h2>
     <!-- Slider main container -->
     <div class="swiper" data-aos="zoom-in" data-aos-delay="200">
       <div class="swiper-wrapper">
@@ -274,10 +275,16 @@
 
 
   <section class="section__container instagram__container" data-aos="fade-up">
-    <p class="section__subheader" data-aos="fade-right">FOLLOW US ON</p>
-    <h2 class="section__header" data-aos="fade-left">INSTAGRAM</h2>
+    <p style="color: #cac6c6;" class="section__subheader" data-aos="fade-right">FOLLOW US ON</p>
+    <h2 style="color: #fff;" class="section__header" data-aos="fade-left">INSTAGRAM</h2>
     <div class="instagram__wrapper" data-aos="zoom-in" data-aos-delay="200">
       <div class="instagram__images">
+        <img src="assets/instagram-1.png" style="border-radius: .5rem;" alt="instagram" data-aos="fade-up"
+          data-aos-delay="100" />
+        <img src="assets/instagram-2.png" style="border-radius: .5rem;" alt="instagram" data-aos="fade-up"
+          data-aos-delay="150" />
+        <img src="assets/instagram-3.png" style="border-radius: .5rem;" alt="instagram" data-aos="fade-up"
+          data-aos-delay="200" />
         <img src="assets/instagram-1.png" style="border-radius: .5rem;" alt="instagram" data-aos="fade-up"
           data-aos-delay="100" />
         <img src="assets/instagram-2.png" style="border-radius: .5rem;" alt="instagram" data-aos="fade-up"
@@ -411,7 +418,7 @@
       <div class="footer-box">
         <div class="footer-logo">
           <img src="image/car-logo-img.png" alt="YNTZ Logo">
-          <h3>YNTZ</h3>
+
         </div>
         <p>
           YNTZ Car Sale Center provides quality vehicles, trusted service,
@@ -455,6 +462,31 @@
     </div>
   </footer>
 
+
+
+
+
+  <div id="loader">
+    <div class="loader-box">
+      <div class="car-icon"><img src="image/car-logo-img-yntz.png" alt="" style="width: 300px;"></div>
+
+      <div class="progress">
+        <span></span>
+      </div>
+
+      <p style="color: #000;font-size: 1.1rem;">Preparing your drive...</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
   <script src="js/components/scrollreveal.js"></script>
   <script src="js/components/swiper-bundle.min.js"></script>
   <script src="js/components/aos.js"></script>
@@ -481,7 +513,9 @@
 
     });
   </script>
+  <script src="js/loader.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

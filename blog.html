@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/components/swiper-bundle.min.css" />
   <link href="css/components/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/loader.css">
   <title>Feedback Page</title>
 </head>
 <style>
@@ -178,7 +179,7 @@
       <div class="footer-box">
         <div class="footer-logo">
           <img src="image/car-logo-img.png" alt="YNTZ Logo">
-          <h3>YNTZ</h3>
+        
         </div>
         <p>
           YNTZ Car Sale Center provides quality vehicles, trusted service,
@@ -221,7 +222,17 @@
       <p>© 2025 YNTZ Car Sale Center. All Rights Reserved.</p>
     </div>
   </footer>
+  <div id="loader">
+    <div class="loader-box">
+      <div class="car-icon"><img src="image/car-logo-img-yntz.png" alt=""  style="width: 300px;"></div>
 
+      <div class="progress">
+        <span></span>
+      </div>
+
+      <p style="color: #000;font-size: 1.1rem;">Preparing your drive...</p>
+    </div>
+  </div>
   <script src="js/components/scrollreveal.js"></script>
   <script src="js/components/swiper-bundle.min.js"></script>
   <script src="js/components/aos.js"></script>
@@ -249,6 +260,7 @@
     });
   </script>
   <script src="js/main.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 
 </html>
