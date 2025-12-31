@@ -25,7 +25,9 @@
   margin: auto;
   padding: 5rem 1rem;
 }
-
+.section__container h1{
+  font-size: 2.4rem;
+}
 .section__subheader {
   max-width: 800px;
   margin-inline: auto;
@@ -148,11 +150,10 @@ nav {
   position: absolute;
   right: -250px;
   top: 0px;
-  /* left: 0; */
   height: 100vh;
   width: fit-content;
   display: flex;
-  align-items: end;
+  align-items:flex-start;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
@@ -206,7 +207,7 @@ nav {
 /* HEADER */
 #home {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -240,7 +241,7 @@ nav {
 }
 
 .header__container h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: 16px;
   margin-bottom: 1rem;
 }
 
@@ -2392,6 +2393,9 @@ Responsive
     }
     .car-btn{
       margin: 0;
+    }
+    #home{
+      min-height: 100vh;
     }
 }
 
