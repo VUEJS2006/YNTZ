@@ -1,0 +1,102 @@
+/* modal overlay */
+:root {
+    --text-color: #eeba2b;
+    --btn-color: #f8bc17;
+    --btn-hover-color: #ffbb00;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    transition: .35s ease;
+    z-index: 999;
+}
+
+/* show modal */
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* modal box */
+.modal {
+    width: 100%;
+    max-width: 420px;
+    padding: 34px 28px;
+    position: relative;
+    animation: scaleUp .4s ease;
+}
+
+/* animation */
+@keyframes scaleUp {
+    from {
+        transform: scale(.85) translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* close btn */
+.modal-close {
+    position: absolute;
+    top: 12px;
+    left: 85%;
+    border: none;
+    background: none;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.glasses {
+  background: rgba(255,255,255,.65);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.15);
+}
+/* text */
+.modal-title {
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+.modal-sub {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* form */
+.booking-form {
+    display: grid;
+    gap: 14px;
+}
+
+.booking-form input {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.booking-form input:focus {
+    outline: none;
+    border-color: var(--btn-color);
+}
+
+/* full button */
+.btn-primary.full {
+    width: 100%;
+    margin-top: 10px;
+}
